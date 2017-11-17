@@ -8,6 +8,7 @@
 </ion-header>
 
 <ion-content text-center>
+  <br>
   <div class="digit">
     <ion-badge class="patate">{{myTimer.heures   | twoDigit}}</ion-badge>
     <ion-badge class="patate">{{myTimer.minutes  | twoDigit}}</ion-badge>
@@ -15,15 +16,15 @@
   </div>
   <div class="action">
 
-    <button class="btn btn-danger btn-lg"
+    <button ion-button
     *ngIf="myState.backward"
     (click)="backward()">Effacer</button>
 
-    <button class="btn btn-danger btn-lg"
+    <button ion-button class="r_patate"
     *ngIf="myState.stop"
     (click)="stop()">Arreter</button>
 
-    <button class="btn btn-primary btn-lg"
+    <button ion-button
     *ngIf="myState.play"
     (click)="start()">{{btnPlay}}</button>
 
