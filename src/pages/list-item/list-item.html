@@ -1,0 +1,41 @@
+<!--
+Generated template for the ListItemPage page.
+
+See http://ionicframework.com/docs/components/#navigation for more info on
+Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar>
+    <ion-buttons end><button (click)="validate()">
+      <ion-icon name="checkmark"></ion-icon>
+    </button>
+  </ion-buttons>
+    <ion-title>list-item</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+  <h1>{{myMessage}}</h1>
+  <p>
+    <ion-icon [name]="myItem.icon" item-start>
+    </ion-icon>
+  </p>
+  <p>{{myItem.title}}</p>
+  <p>{{myItem.note}}</p>
+
+  <ion-list>
+    <ion-item>
+      <ion-label color="primary">
+        Titre
+      </ion-label>
+      <ion-input placeholder="Saisir le titre">
+      </ion-input>
+      <ion-label color="primary">
+        Note
+      </ion-label>
+      <ion-input placeholder="Saisir la note">
+      </ion-input>
+    </ion-item>
+  </ion-list>
+</ion-content>

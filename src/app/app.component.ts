@@ -7,9 +7,9 @@ import { HomePage } from '../pages/home/home';
 import { ListPage } from '../pages/list/list';
 import { TabsPage } from '../pages/tabs/tabs';
 
-import { AboutPage } from '../pages/about/about';
-import { ContactPage } from '../pages/contact/contact';
-import { CinqPage } from '../pages/cinq/cinq';
+import { Horloge } from '../pages/horloge/horloge';
+import { Chrono } from '../pages/chrono/chrono';
+import { Minuteur } from '../pages/minuteur/minuteur';
 
 @Component({
   templateUrl: 'app.html'
