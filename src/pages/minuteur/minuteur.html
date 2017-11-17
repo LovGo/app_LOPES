@@ -7,7 +7,34 @@
   </ion-navbar>
 </ion-header>
 
-<ion-content>
-  <p>patate</p>
+<ion-content text-center>
+  <br>
+  <div class="digit">
+    <ion-badge class="patate">{{myTimer.heures   | twoDigit}}</ion-badge>
+    <ion-badge class="patate">{{myTimer.minutes  | twoDigit}}</ion-badge>
+    <ion-badge class="patate">{{myTimer.secondes | twoDigit}}</ion-badge>
+  </div>
 
+  <ion-item>
+    <ion-label color="primary" fixed>Fixed Label</ion-label>
+    <ion-input type="tel" placeholder="Tel Input"></ion-input>
+    <ion-label color="primary" fixed>Fixed Label</ion-label>
+    <ion-input type="tel" placeholder="Tel Input"></ion-input>
+  </ion-item>
+
+  <div class="action">
+
+    <button ion-button class="r_patate"
+    *ngIf="myState.backward"
+    (click)="backward()">Effacer</button>
+
+    <button ion-button class="r_patate"
+    *ngIf="myState.stop"
+    (click)="stop()">Arreter</button>
+
+    <button ion-button
+    *ngIf="myState.play"
+    (click)="start()">{{btnPlay}}</button>
+
+  </div>
 </ion-content>
