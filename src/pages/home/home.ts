@@ -11,8 +11,8 @@ import { Minuteur } from '../minuteur/minuteur';
 export class HomePage {
 
   tab1Root = Horloge;
-  tab2Root = Minuteur;
-  tab3Root = Chrono;
+  tab2Root = Chrono;
+  tab3Root = Minuteur;
 
   constructor(public navCtrl: NavController) {
 

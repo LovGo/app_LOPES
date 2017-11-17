@@ -12,8 +12,8 @@ export class TabsPage {
 
   tab1Root = HomePage;
   tab2Root = Horloge;
-  tab3Root = Minuteur;
-  tab4Root = Chrono;
+  tab3Root = Chrono;
+  tab4Root = Minuteur;
 
   constructor() {
 
