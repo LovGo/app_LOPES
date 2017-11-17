@@ -7,12 +7,25 @@
   </ion-navbar>
 </ion-header>
 
-<ion-content>
-  <ion-list>
-    <ion-list-header>Follow us on Twitter</ion-list-header>
-    <ion-item>
-      <ion-icon name="ionic" item-start></ion-icon>
-      @ionicframework
-    </ion-item>
-  </ion-list>
+<ion-content text-center>
+  <div class="digit">
+    <ion-badge class="patate">{{myTimer.heures   | twoDigit}}</ion-badge>
+    <ion-badge class="patate">{{myTimer.minutes  | twoDigit}}</ion-badge>
+    <ion-badge class="patate">{{myTimer.secondes | twoDigit}}</ion-badge>
+  </div>
+  <div class="action">
+
+    <button class="btn btn-danger btn-lg"
+    *ngIf="myState.backward"
+    (click)="backward()">Effacer</button>
+
+    <button class="btn btn-danger btn-lg"
+    *ngIf="myState.stop"
+    (click)="stop()">Arreter</button>
+
+    <button class="btn btn-primary btn-lg"
+    *ngIf="myState.play"
+    (click)="start()">{{btnPlay}}</button>
+
+  </div>
 </ion-content>
