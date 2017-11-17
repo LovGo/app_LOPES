@@ -11,6 +11,7 @@ import { TabsPage } from '../pages/tabs/tabs';
 import { Horloge } from '../pages/horloge/horloge';
 import { Chrono } from '../pages/chrono/chrono';
 import { Minuteur } from '../pages/minuteur/minuteur';
+import { ContactPage } from '../pages/contact/contact';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -21,6 +22,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     HomePage,
     ListPage,
     TabsPage,
+    ContactPage,
     Horloge,
     Chrono,
     Minuteur,
@@ -36,6 +38,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     HomePage,
     ListPage,
     TabsPage,
+    ContactPage,
     Horloge,
     Chrono,
     Minuteur,

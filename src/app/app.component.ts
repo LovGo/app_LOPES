@@ -8,6 +8,7 @@ import { ListPage } from '../pages/list/list';
 import { TabsPage } from '../pages/tabs/tabs';
 
 import { Horloge } from '../pages/horloge/horloge';
+import { ContactPage } from '../pages/contact/contact';
 import { Chrono } from '../pages/chrono/chrono';
 import { Minuteur } from '../pages/minuteur/minuteur';
 
@@ -28,7 +29,7 @@ export class MyApp {
     this.pages = [
       { title: 'Home', component: HomePage },
       { title: 'List', component: ListPage },
-      { title: 'Tabs', component: TabsPage }
+      { title: 'Contact', component: ContactPage }
     ];
 
   }
