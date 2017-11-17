@@ -8,6 +8,9 @@ import { VillePage } from '../pages/list/list';
 import { ListVillePage } from '../pages/list-ville/list-ville';
 import { TabsPage } from '../pages/tabs/tabs';
 
+import { TwoDigit }     from './twodigits';
+import { mDate }        from './mdate';
+
 import { Horloge } from '../pages/horloge/horloge';
 import { Chrono } from '../pages/chrono/chrono';
 import { Minuteur } from '../pages/minuteur/minuteur';
@@ -26,6 +29,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     Horloge,
     Chrono,
     Minuteur,
+    TwoDigit,
     ListVillePage
   ],
   imports: [

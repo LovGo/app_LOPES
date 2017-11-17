@@ -1,3 +1,4 @@
+
 <ion-header>
   <ion-navbar>
     <button ion-button menuToggle>
@@ -7,6 +8,17 @@
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
-
+<ion-content text-center>
+  <ion-badge class="p_patate">{{myDate.c_jour}}</ion-badge>
+  <div class="digit">
+    <ion-badge class="patate">{{myDate.jour  | twoDigit}}</ion-badge> /
+    <ion-badge class="patate">{{myDate.mois  }}</ion-badge> /
+    <ion-badge class="patate">{{myDate.annee }}</ion-badge>
+  </div>
+  <br>
+  <div class="digit">
+    <ion-badge class="patate">{{myDate.heures   | twoDigit}}</ion-badge> :
+    <ion-badge class="patate">{{myDate.minutes  | twoDigit}}</ion-badge> :
+    <ion-badge class="patate">{{myDate.secondes | twoDigit}}</ion-badge>
+  </div>
 </ion-content>
