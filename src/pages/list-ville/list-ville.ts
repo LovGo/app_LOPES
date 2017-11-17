@@ -2,17 +2,17 @@ import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
 
 /**
-* Generated class for the ListItemPage page.
+* Generated class for the ListVillePage page.
 *
 * See https://ionicframework.com/docs/components/#navigation for more info on
 * Ionic pages and navigation.
 */
 
 @Component({
-  selector: 'page-list-item',
-  templateUrl: 'list-item.html',
+  selector: 'page-list-ville',
+  templateUrl: 'list-ville.html',
 })
-export class ListItemPage {
+export class ListVillePage {
   myItem: any;
   myMessage: string;
 
@@ -22,7 +22,7 @@ export class ListItemPage {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad ListItemPage');
+    console.log('ionViewDidLoad ListVillePage');
   }
 
   validate(){

@@ -4,8 +4,8 @@ import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
-import { ListPage } from '../pages/list/list';
-import { ListItemPage } from '../pages/list-item/list-item';
+import { VillePage } from '../pages/list/list';
+import { ListVillePage } from '../pages/list-ville/list-ville';
 import { TabsPage } from '../pages/tabs/tabs';
 
 import { Horloge } from '../pages/horloge/horloge';
@@ -20,13 +20,13 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   declarations: [
     MyApp,
     HomePage,
-    ListPage,
+    VillePage,
     TabsPage,
     ContactPage,
     Horloge,
     Chrono,
     Minuteur,
-    ListItemPage
+    ListVillePage
   ],
   imports: [
     BrowserModule,
@@ -36,13 +36,13 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   entryComponents: [
     MyApp,
     HomePage,
-    ListPage,
+    VillePage,
     TabsPage,
     ContactPage,
     Horloge,
     Chrono,
     Minuteur,
-    ListItemPage
+    ListVillePage
   ],
   providers: [
     StatusBar,
