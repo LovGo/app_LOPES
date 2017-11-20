@@ -9,18 +9,10 @@
 
 <ion-content text-center>
   <br>
-  <div class="digit">
-    <ion-badge class="patate">{{myTimer.heures   | twoDigit}}</ion-badge>
-    <ion-badge class="patate">{{myTimer.minutes  | twoDigit}}</ion-badge>
-    <ion-badge class="patate">{{myTimer.secondes | twoDigit}}</ion-badge>
+  <div class="digit" text-center>
+    <ion-input [(ngModel)]="timer.minutes" class="ecran label label-default"></ion-input>
+    <ion-input [(ngModel)]="timer.secondes" class="ecran label label-default"></ion-input>
   </div>
-
-  <ion-item>
-    <ion-label color="primary" fixed>Fixed Label</ion-label>
-    <ion-input type="tel" placeholder="Tel Input"></ion-input>
-    <ion-label color="primary" fixed>Fixed Label</ion-label>
-    <ion-input type="tel" placeholder="Tel Input"></ion-input>
-  </ion-item>
 
   <div class="action">
 

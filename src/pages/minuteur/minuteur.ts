@@ -13,12 +13,22 @@ export class Minuteur {
   private myState: State  = new State();
   private btnPlay: string = 'Demarrer';
 
+  private secondes: number = 0;
+  private minutes:  number = 0;
+  private timer;
+
   constructor(public navCtrl: NavController) {
 
   }
   start(){
-    this.myTimer.start();
-    this.myState.setPlay();
+    this.timer = setInterval(() => {
+      this.secondes--;
+      if(this.secondes == 0){
+        this.minutes--;
+        this.secondes = 60;
+      }
+
+    }, 1000);    this.myState.setPlay();
   }
   stop(){
     this.myTimer.stop();
